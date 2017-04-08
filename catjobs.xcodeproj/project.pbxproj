@@ -12,9 +12,13 @@
 		837F9DD81E991C4E00F96276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837F9DD61E991C4E00F96276 /* Main.storyboard */; };
 		837F9DDA1E991C4E00F96276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837F9DD91E991C4E00F96276 /* Assets.xcassets */; };
 		837F9DDD1E991C4E00F96276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837F9DDB1E991C4E00F96276 /* LaunchScreen.storyboard */; };
+		838104231E99257C0066CF21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838104221E99257C0066CF21 /* LoginViewController.swift */; };
+		838104291E9944CE0066CF21 /* MyJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838104281E9944CE0066CF21 /* MyJobsViewController.swift */; };
+		D1EF5C668BAD1D4108810784 /* Pods_catjobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5D6549C6A1DCDEA71AAF1A /* Pods_catjobs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B97D8ACFE42E3DF20666F73 /* Pods-catjobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-catjobs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-catjobs/Pods-catjobs.debug.xcconfig"; sourceTree = "<group>"; };
 		837F9DCF1E991C4E00F96276 /* catjobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = catjobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837F9DD21E991C4E00F96276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837F9DD41E991C4E00F96276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		837F9DD91E991C4E00F96276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837F9DDC1E991C4E00F96276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837F9DDE1E991C4E00F96276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838104221E99257C0066CF21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		838104281E9944CE0066CF21 /* MyJobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyJobsViewController.swift; sourceTree = "<group>"; };
+		A0081FA8E690690C9E891231 /* Pods-catjobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-catjobs.release.xcconfig"; path = "Pods/Target Support Files/Pods-catjobs/Pods-catjobs.release.xcconfig"; sourceTree = "<group>"; };
+		EB5D6549C6A1DCDEA71AAF1A /* Pods_catjobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_catjobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EF5C668BAD1D4108810784 /* Pods_catjobs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				837F9DD11E991C4E00F96276 /* catjobs */,
 				837F9DD01E991C4E00F96276 /* Products */,
+				A1B4E8C77DB1A6DAD535A69D /* Pods */,
+				A245FD98D6704A1DF3AAD613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,27 @@
 				837F9DD91E991C4E00F96276 /* Assets.xcassets */,
 				837F9DDB1E991C4E00F96276 /* LaunchScreen.storyboard */,
 				837F9DDE1E991C4E00F96276 /* Info.plist */,
+				838104221E99257C0066CF21 /* LoginViewController.swift */,
+				838104281E9944CE0066CF21 /* MyJobsViewController.swift */,
 			);
 			path = catjobs;
+			sourceTree = "<group>";
+		};
+		A1B4E8C77DB1A6DAD535A69D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B97D8ACFE42E3DF20666F73 /* Pods-catjobs.debug.xcconfig */,
+				A0081FA8E690690C9E891231 /* Pods-catjobs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A245FD98D6704A1DF3AAD613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB5D6549C6A1DCDEA71AAF1A /* Pods_catjobs.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837F9DE11E991C4E00F96276 /* Build configuration list for PBXNativeTarget "catjobs" */;
 			buildPhases = (
+				64D51684D44148FF844C7176 /* [CP] Check Pods Manifest.lock */,
 				837F9DCB1E991C4C00F96276 /* Sources */,
 				837F9DCC1E991C4C00F96276 /* Frameworks */,
 				837F9DCD1E991C4C00F96276 /* Resources */,
+				A0A3E4D074F85C5E8ED916A3 /* [CP] Embed Pods Frameworks */,
+				8091784D99B6C18C98883344 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +164,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64D51684D44148FF844C7176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8091784D99B6C18C98883344 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-catjobs/Pods-catjobs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A3E4D074F85C5E8ED916A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-catjobs/Pods-catjobs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		837F9DCB1E991C4C00F96276 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838104231E99257C0066CF21 /* LoginViewController.swift in Sources */,
 				837F9DD51E991C4E00F96276 /* ViewController.swift in Sources */,
+				838104291E9944CE0066CF21 /* MyJobsViewController.swift in Sources */,
 				837F9DD31E991C4E00F96276 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +339,7 @@
 		};
 		837F9DE21E991C4E00F96276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B97D8ACFE42E3DF20666F73 /* Pods-catjobs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = catjobs/Info.plist;
@@ -268,6 +352,7 @@
 		};
 		837F9DE31E991C4E00F96276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0081FA8E690690C9E891231 /* Pods-catjobs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = catjobs/Info.plist;
@@ -297,6 +382,7 @@
 				837F9DE31E991C4E00F96276 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
